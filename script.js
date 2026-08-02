@@ -1,0 +1,2 @@
+function toggleMenu(){document.getElementById('menu').classList.toggle('active')}
+document.querySelectorAll('#menu a').forEach(l=>{l.addEventListener('click',()=>document.getElementById('menu').classList.remove('active'))})

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#0A1628">
+<meta name="description" content="Galería Palafito del Sur — Fotos reales de nuestras cabañas, el canal de Dalcahue y el entorno.">
+<title>Galería · Palafito del Sur</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.page-hero{padding:90px 1.5rem 2rem;text-align:center;max-width:700px;margin:0 auto}
+.page-hero h1{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;font-family:var(--fd)}
+.page-hero p{color:var(--t3);font-size:.85rem;margin-top:.4rem}
+
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;max-width:900px;margin:0 auto}
+.gal-item{aspect-ratio:1;background:var(--s);border:1px solid var(--b);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:3rem;transition:var(--tr);overflow:hidden;position:relative}
+.gal-item:hover{transform:scale(1.03);border-color:var(--ba)}
+.gal-item.big{grid-column:span 2;grid-row:span 2;font-size:5rem}
+.gal-label{position:absolute;bottom:.5rem;left:.5rem;right:.5rem;background:rgba(0,0,0,.7);color:var(--t);font-size:.6rem;font-weight:600;padding:.3rem .5rem;border-radius:6px;text-align:center}
+@media(max-width:600px){.gal{grid-template-columns:repeat(2,1fr)}.gal-item.big{grid-column:span 2;grid-row:span 1;aspect-ratio:2/1}}
+</style>
+</head>
+<body>
+
+<nav class="n">
+  <div class="nc">
+    <a href="index.html" class="nl">🏡 Palafito <span>del Sur</span></a>
+    <ul class="nm" id="menu">
+      <li class="mc" onclick="toggleMenu()">✕</li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="cabanas.html">Cabañas</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="galeria.html" class="active">Galería</a></li>
+      <li><a href="contacto.html" class="nb">Reservar</a></li>
+    </ul>
+    <button class="nh" onclick="toggleMenu()" aria-label="Menú">☰</button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>Galería</h1>
+  <p>Así se ve Palafito del Sur. Sin filtros, sin Photoshop.</p>
+</div>
+
+<section class="sc" style="padding-top:1rem">
+  <div class="gal">
+    <div class="gal-item big">🏡<div class="gal-label">Vista exterior de los palafitos</div></div>
+    <div class="gal-item">🌅<div class="gal-label">Atardecer desde la terraza</div></div>
+    <div class="gal-item">🛏️<div class="gal-label">Habitación Palafito Pareja</div></div>
+    <div class="gal-item">🛁<div class="gal-label">Tinaja con vista al canal</div></div>
+    <div class="gal-item">🍳<div class="gal-label">Cocina equipada</div></div>
+    <div class="gal-item">🌊<div class="gal-label">Canal de Dalcahue</div></div>
+    <div class="gal-item">🔥<div class="gal-label">Chimenea encendida</div></div>
+    <div class="gal-item">🛶<div class="gal-label">Kayaks en la playa</div></div>
+  </div>
+</section>
+
+<footer class="ft">
+  <p>🏡 Palafito del Sur · Costanera 450, Dalcahue, Chiloé</p>
+  <p>Sitio web creado por <a href="https://mr.mrcomsoluciones.cl">MR.COM Soluciones</a> — Plan Multi-Página — Pago único desde $119.400</p>
+</footer>
+
+<a href="https://wa.me/56975177638?text=Hola%20Palafito%20del%20Sur" target="_blank" class="wsp" aria-label="WhatsApp">💬</a>
+<script src="script.js"></script>
+</body>
+</html>

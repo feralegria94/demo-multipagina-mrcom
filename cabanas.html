@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#0A1628">
+<meta name="description" content="Cabañas Palafito del Sur — 4 cabañas con vista al canal de Dalcahue. Desde $45.000 la noche.">
+<title>Cabañas · Palafito del Sur</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.page-hero{padding:90px 1.5rem 2rem;text-align:center;max-width:700px;margin:0 auto}
+.page-hero h1{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;font-family:var(--fd)}
+.page-hero p{color:var(--t3);font-size:.85rem;margin-top:.4rem}
+
+.cg{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;max-width:900px;margin:0 auto}
+.card{background:var(--s);border:1px solid var(--b);border-radius:14px;overflow:hidden;transition:var(--tr)}
+.card:hover{transform:translateY(-3px);border-color:var(--ba);box-shadow:0 8px 25px rgba(0,0,0,.5)}
+.card-img{height:180px;background:var(--s2);display:flex;align-items:center;justify-content:center;font-size:4rem;border-bottom:1px solid var(--b)}
+.card-body{padding:1.3rem}
+.card-body h3{font-size:.85rem;font-weight:700;font-family:var(--fd);margin-bottom:.3rem}
+.card-body p{font-size:.7rem;color:var(--t3);margin-bottom:.6rem;line-height:1.5}
+.card-body ul{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:.8rem}
+.card-body ul li{font-size:.6rem;background:var(--s2);border:1px solid var(--b);padding:.2rem .5rem;border-radius:6px;color:var(--t2)}
+.card-body .price{font-size:.9rem;font-weight:900;font-family:var(--fm);background:var(--gh);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.card-body .price small{font-size:.55rem;color:var(--t3);-webkit-text-fill-color:var(--t3);font-weight:400}
+.card-body .btn-row{display:flex;gap:.5rem;margin-top:.8rem}
+.card-body .btn-row .bt{flex:1;text-align:center;justify-content:center}
+.card-tag{position:absolute;top:.6rem;right:.6rem;background:rgba(13,148,136,.9);color:#fff;font-size:.55rem;font-weight:700;padding:.2rem .5rem;border-radius:6px}
+.card-img{position:relative}
+@media(max-width:700px){.cg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="n">
+  <div class="nc">
+    <a href="index.html" class="nl">🏡 Palafito <span>del Sur</span></a>
+    <ul class="nm" id="menu">
+      <li class="mc" onclick="toggleMenu()">✕</li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="cabanas.html" class="active">Cabañas</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html" class="nb">Reservar</a></li>
+    </ul>
+    <button class="nh" onclick="toggleMenu()" aria-label="Menú">☰</button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>Nuestras Cabañas</h1>
+  <p>Cuatro palafitos restaurados. Todos con vista directa al canal de Dalcahue, cocina equipada y baño privado.</p>
+</div>
+
+<section class="sc" style="padding-top:1rem">
+  <div class="cg">
+    <div class="card">
+      <div class="card-img">🏡<div class="card-tag">MÁS ECONÓMICA</div></div>
+      <div class="card-body">
+        <h3>Palafito Chico</h3>
+        <p>1 habitación con cama matrimonial. Pequeña pero acogedora, con lo justo para una escapada.</p>
+        <ul><li>🛏️ 2 pers.</li><li>🍳 Cocina</li><li>📶 WiFi</li><li>🔥 Leña</li></ul>
+        <div class="price">$45.000 <small>/ noche</small></div>
+        <div class="btn-row">
+          <a href="contacto.html" class="bt bt-p">Reservar</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">💑</div>
+      <div class="card-body">
+        <h3>Palafito Pareja</h3>
+        <p>1 habitación amplia con cama king, terraza privada y tinaja. La favorita para aniversarios.</p>
+        <ul><li>🛏️ 2 pers.</li><li>🛁 Tinaja</li><li>🌅 Terraza</li><li>🍳 Cocina</li></ul>
+        <div class="price">$59.000 <small>/ noche</small></div>
+        <div class="btn-row">
+          <a href="contacto.html" class="bt bt-p">Reservar</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">👨‍👩‍👧‍👦</div>
+      <div class="card-body">
+        <h3>Palafito Familiar</h3>
+        <p>2 habitaciones, living-comedor amplio, terraza grande. Ideal para familias o grupos de amigos.</p>
+        <ul><li>🛏️ 5 pers.</li><li>🛁 Tinaja</li><li>🍳 Cocina full</li><li>📺 TV</li></ul>
+        <div class="price">$75.000 <small>/ noche</small></div>
+        <div class="btn-row">
+          <a href="contacto.html" class="bt bt-p">Reservar</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">🌟</div>
+      <div class="card-body">
+        <div class="card-tag">MEJOR VISTA</div>
+        <h3>Palafito Premium</h3>
+        <p>El más grande de todos. 2 pisos con ventanal de 6 metros al canal, tinaja doble y chimenea.</p>
+        <ul><li>🛏️ 4 pers.</li><li>🛁 Tinaja doble</li><li>🔥 Chimenea</li><li>🎵 Sonido</li></ul>
+        <div class="price">$95.000 <small>/ noche</small></div>
+        <div class="btn-row">
+          <a href="contacto.html" class="bt bt-p">Reservar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="ft">
+  <p>🏡 Palafito del Sur · Costanera 450, Dalcahue, Chiloé</p>
+  <p>Sitio web creado por <a href="https://mr.mrcomsoluciones.cl">MR.COM Soluciones</a> — Plan Multi-Página — Pago único desde $119.400</p>
+</footer>
+
+<a href="https://wa.me/56975177638?text=Hola%20Palafito%20del%20Sur" target="_blank" class="wsp" aria-label="WhatsApp">💬</a>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#0A1628">
+<meta name="description" content="Contacto Palafito del Sur — Reserva directa sin comisiones. WhatsApp, teléfono y formulario.">
+<title>Contacto · Palafito del Sur</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.page-hero{padding:90px 1.5rem 2rem;text-align:center;max-width:700px;margin:0 auto}
+.page-hero h1{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;font-family:var(--fd)}
+.page-hero p{color:var(--t3);font-size:.85rem;margin-top:.4rem}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:800px;margin:0 auto}
+.contact-info{background:var(--s);border:1px solid var(--b);border-radius:14px;padding:1.5rem}
+.contact-info h3{font-size:.85rem;font-weight:700;font-family:var(--fd);margin-bottom:.8rem}
+.contact-info .item{display:flex;align-items:center;gap:.6rem;padding:.6rem 0;border-bottom:1px solid var(--b);font-size:.72rem;color:var(--t2)}
+.contact-info .item:last-child{border:none}
+.contact-info .item .icon{width:32px;height:32px;background:rgba(13,148,136,.1);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0}
+
+.contact-form{background:var(--s);border:1px solid var(--b);border-radius:14px;padding:1.5rem}
+.contact-form h3{font-size:.85rem;font-weight:700;font-family:var(--fd);margin-bottom:.8rem}
+.contact-form label{display:block;font-size:.65rem;color:var(--t3);margin-bottom:.2rem;margin-top:.8rem}
+.contact-form input,.contact-form textarea{width:100%;background:var(--bg);border:1px solid var(--b);border-radius:8px;padding:.6rem;color:var(--t);font-family:var(--fb);font-size:.7rem}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--r)}
+.contact-form textarea{height:80px;resize:vertical}
+.contact-form .bt{width:100%;margin-top:1rem;justify-content:center}
+.contact-form label:first-child{margin-top:0}
+
+.cta-bottom{text-align:center;margin-top:2rem}
+.cta-bottom .bt{font-size:.9rem!important;padding:.8rem 2rem!important}
+
+@media(max-width:700px){.contact-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="n">
+  <div class="nc">
+    <a href="index.html" class="nl">🏡 Palafito <span>del Sur</span></a>
+    <ul class="nm" id="menu">
+      <li class="mc" onclick="toggleMenu()">✕</li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="cabanas.html">Cabañas</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html" class="nb active">Reservar</a></li>
+    </ul>
+    <button class="nh" onclick="toggleMenu()" aria-label="Menú">☰</button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>Reservá tu palafito</h1>
+  <p>Sin comisiones de Booking ni Airbnb. Trato directo con los dueños. Respondemos en menos de 1 hora.</p>
+</div>
+
+<section class="sc" style="padding-top:1rem">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>📞 Contacto directo</h3>
+      <div class="item"><div class="icon">💬</div><div><strong>WhatsApp</strong><br>+56 9 7517 7638</div></div>
+      <div class="item"><div class="icon">📞</div><div><strong>Teléfono</strong><br>+56 65 2 631 440</div></div>
+      <div class="item"><div class="icon">📧</div><div><strong>Email</strong><br>hola@palafitodelsur.cl</div></div>
+      <div class="item"><div class="icon">📍</div><div><strong>Dirección</strong><br>Costanera 450, Dalcahue, Chiloé</div></div>
+      <div class="item"><div class="icon">🕐</div><div><strong>Check-in/out</strong><br>14:00 / 11:00 hrs</div></div>
+    </div>
+    <div class="contact-form">
+      <h3>✉️ Escribinos</h3>
+      <form onsubmit="event.preventDefault();window.open('https://wa.me/56975177638?text=Hola%20Palafito%20del%20Sur,%20quiero%20reservar%20del%20'+document.getElementById('fecha').value+'.%20Somos%20'+document.getElementById('personas').value+'%20personas.','_blank')">
+        <label>Nombre</label>
+        <input type="text" placeholder="Tu nombre" required>
+        <label>Fecha de llegada</label>
+        <input type="date" id="fecha" required>
+        <label>Personas</label>
+        <input type="number" id="personas" min="1" max="10" value="2" required>
+        <label>Mensaje (opcional)</label>
+        <textarea placeholder="¿Alguna preferencia de palafito? ¿Celebrando algo especial?"></textarea>
+        <button type="submit" class="bt bt-p">Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="cta-bottom">
+    <p style="font-size:.7rem;color:var(--t3);margin-bottom:.8rem">¿Preferís hablar directo?</p>
+    <a href="https://wa.me/56975177638?text=Hola%20Palafito%20del%20Sur,%20quiero%20reservar" target="_blank" class="bt bt-p">Reservar por WhatsApp 💬</a>
+  </div>
+</section>
+
+<footer class="ft">
+  <p>🏡 Palafito del Sur · Costanera 450, Dalcahue, Chiloé · +56 9 7517 7638</p>
+  <p>Sitio web creado por <a href="https://mr.mrcomsoluciones.cl">MR.COM Soluciones</a> — Plan Multi-Página — Pago único desde $119.400</p>
+</footer>
+
+<a href="https://wa.me/56975177638?text=Hola%20Palafito%20del%20Sur" target="_blank" class="wsp" aria-label="WhatsApp">💬</a>
+<script src="script.js"></script>
+</body>
+</html>

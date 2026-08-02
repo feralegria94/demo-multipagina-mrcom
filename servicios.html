@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#0A1628">
+<meta name="description" content="Servicios Palafito del Sur — Tinaja caliente, desayuno, WiFi Starlink, kayak y más.">
+<title>Servicios · Palafito del Sur</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.page-hero{padding:90px 1.5rem 2rem;text-align:center;max-width:700px;margin:0 auto}
+.page-hero h1{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;font-family:var(--fd)}
+.page-hero p{color:var(--t3);font-size:.85rem;margin-top:.4rem}
+
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:850px;margin:0 auto}
+.svc{background:var(--s);border:1px solid var(--b);border-radius:14px;padding:1.5rem 1rem;text-align:center;transition:var(--tr)}
+.svc:hover{border-color:var(--ba);transform:translateY(-2px)}
+.svc .icon{font-size:2.2rem;margin-bottom:.6rem}
+.svc h4{font-size:.78rem;font-weight:700;font-family:var(--fd);margin-bottom:.3rem}
+.svc p{font-size:.65rem;color:var(--t3);line-height:1.5}
+@media(max-width:700px){.sg{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:400px){.sg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="n">
+  <div class="nc">
+    <a href="index.html" class="nl">🏡 Palafito <span>del Sur</span></a>
+    <ul class="nm" id="menu">
+      <li class="mc" onclick="toggleMenu()">✕</li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="cabanas.html">Cabañas</a></li>
+      <li><a href="servicios.html" class="active">Servicios</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html" class="nb">Reservar</a></li>
+    </ul>
+    <button class="nh" onclick="toggleMenu()" aria-label="Menú">☰</button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>Servicios</h1>
+  <p>Todo incluido en tu estadía. Sin costos ocultos, sin sorpresas.</p>
+</div>
+
+<section class="sc" style="padding-top:1rem">
+  <div class="sg">
+    <div class="svc"><div class="icon">🛁</div><h4>Tinaja caliente</h4><p>Leña incluida. La dejamos lista para tu llegada.</p></div>
+    <div class="svc"><div class="icon">🍳</div><h4>Desayuno casero</h4><p>Pan amasado, huevos de campo, mermelada artesanal, café de grano.</p></div>
+    <div class="svc"><div class="icon">📶</div><h4>WiFi Starlink</h4><p>Internet satelital de alta velocidad en todo el terreno.</p></div>
+    <div class="svc"><div class="icon">🔥</div><h4>Calefacción a leña</h4><p>Salamandra o chimenea en cada palafito. Leña seca incluida.</p></div>
+    <div class="svc"><div class="icon">🚗</div><h4>Estacionamiento</h4><p>Privado dentro del terreno. Para 1 vehículo por cabaña.</p></div>
+    <div class="svc"><div class="icon">🛶</div><h4>Kayak</h4><p>2 kayaks dobles disponibles. Explorá el canal por tu cuenta.</p></div>
+    <div class="svc"><div class="icon">🐕</div><h4>Pet friendly</h4><p>Tu mascota es bienvenida. Tenemos comedero y cama extra.</p></div>
+    <div class="svc"><div class="icon">🧹</div><h4>Limpieza</h4><p>Servicio de limpieza diario sin costo adicional.</p></div>
+    <div class="svc"><div class="icon">🎣</div><h4>Pesca</h4><p>Cañas y equipos básicos disponibles. La corvina pica al amanecer.</p></div>
+  </div>
+</section>
+
+<footer class="ft">
+  <p>🏡 Palafito del Sur · Costanera 450, Dalcahue, Chiloé</p>
+  <p>Sitio web creado por <a href="https://mr.mrcomsoluciones.cl">MR.COM Soluciones</a> — Plan Multi-Página — Pago único desde $119.400</p>
+</footer>
+
+<a href="https://wa.me/56975177638?text=Hola%20Palafito%20del%20Sur" target="_blank" class="wsp" aria-label="WhatsApp">💬</a>
+<script src="script.js"></script>
+</body>
+</html>

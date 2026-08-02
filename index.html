@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#0A1628">
+<meta name="description" content="Palafito del Sur — Cabañas con palafito sobre el mar en Dalcahue, Chiloé. Desayuno, tinaja y vista al canal.">
+<meta property="og:title" content="Palafito del Sur · Cabañas en Dalcahue, Chiloé">
+<meta property="og:description" content="Cabañas palafito sobre el canal de Dalcahue. Descanso con vista al mar.">
+<title>Palafito del Sur · Cabañas en Dalcahue, Chiloé</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.h{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:76px 1.5rem 2rem;text-align:center;position:relative}
+.h::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(13,148,136,.08),rgba(15,118,110,.04));z-index:0}
+.hc{max-width:700px;position:relative;z-index:1}
+.hbadge{display:inline-flex;align-items:center;gap:.35rem;background:rgba(13,148,136,.1);border:1px solid var(--ba);padding:.25rem .7rem;border-radius:12px;font-size:.6rem;font-weight:600;color:var(--r);margin-bottom:.8rem;font-family:var(--fm)}
+.hbadge .dot{width:5px;height:5px;border-radius:50%;background:var(--r);animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hh{font-size:clamp(1.8rem,4.5vw,3rem);font-weight:900;line-height:1.1;letter-spacing:-.5px;margin-bottom:.8rem;font-family:var(--fd)}
+.hh em{font-style:normal;background:var(--gh);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hp{font-size:.9rem;color:var(--t2);max-width:480px;margin:0 auto 1.5rem;line-height:1.7}
+.hb{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+.hinfo{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem;font-size:.68rem;color:var(--t3)}
+.hinfo span{display:flex;align-items:center;gap:.3rem}
+
+.quick-links{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2rem}
+.ql{background:var(--s);border:1px solid var(--b);border-radius:12px;padding:1.5rem .8rem;text-align:center;text-decoration:none;color:var(--t);transition:var(--tr)}
+.ql:hover{transform:translateY(-3px);border-color:var(--ba);box-shadow:0 8px 25px rgba(0,0,0,.4)}
+.ql .icon{font-size:2rem;margin-bottom:.5rem}
+.ql h3{font-size:.75rem;font-weight:700;font-family:var(--fd)}
+.ql p{font-size:.6rem;color:var(--t3);margin-top:.2rem}
+
+.testimonial{background:var(--s);border:1px solid var(--b);border-radius:14px;padding:2rem;max-width:650px;margin:3rem auto 0;text-align:center}
+.testimonial .stars{color:var(--o);font-size:.9rem;margin-bottom:.5rem}
+.testimonial blockquote{font-size:.85rem;color:var(--t2);line-height:1.7;font-style:italic;margin-bottom:.6rem}
+.testimonial cite{font-size:.65rem;color:var(--t4);font-style:normal}
+
+@media(max-width:700px){.quick-links{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.hh{font-size:1.5rem}.hp{font-size:.78rem}.hb{flex-direction:column;align-items:stretch}.bt{justify-content:center}.bt-o{order:2}}
+@media(max-width:400px){.hh{font-size:1.25rem}.hinfo{gap:.5rem}.quick-links{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="n">
+  <div class="nc">
+    <a href="index.html" class="nl">🏡 Palafito <span>del Sur</span></a>
+    <ul class="nm" id="menu">
+      <li class="mc" onclick="toggleMenu()">✕</li>
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="cabanas.html">Cabañas</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html" class="nb">Reservar</a></li>
+    </ul>
+    <button class="nh" onclick="toggleMenu()" aria-label="Menú">☰</button>
+  </div>
+</nav>
+
+<section class="h" id="inicio">
+  <div class="hc">
+    <div class="hbadge"><span class="dot"></span> DALCAHUE · CHILOÉ</div>
+    <h1 class="hh">Cabañas palafito<br><em>sobre el mar</em></h1>
+    <p class="hp">Duerme escuchando las olas en el canal de Dalcahue. Palafitos restaurados con tinaja caliente, desayuno casero y la mejor vista de Chiloé.</p>
+    <div class="hinfo">
+      <span>📍 Costanera Dalcahue</span>
+      <span>⭐ 4.8 en Google</span>
+      <span>🛏️ 4 cabañas</span>
+    </div>
+    <div class="hb">
+      <a href="cabanas.html" class="bt bt-p bt-lg">Ver cabañas 🏡</a>
+      <a href="contacto.html" class="bt bt-o bt-lg">Reservar ahora</a>
+    </div>
+  </div>
+</section>
+
+<section class="sc">
+  <div class="sh">
+    <div class="sl">Explora</div>
+    <h2>Conoce Palafito del Sur</h2>
+    <p>Navega por nuestras secciones. Fotos reales, precios transparentes, reserva directa.</p>
+  </div>
+  <div class="quick-links">
+    <a href="cabanas.html" class="ql"><div class="icon">🛏️</div><h3>Cabañas</h3><p>4 opciones con vista al mar</p></a>
+    <a href="servicios.html" class="ql"><div class="icon">🛁</div><h3>Servicios</h3><p>Tinaja, desayuno, kayak</p></a>
+    <a href="galeria.html" class="ql"><div class="icon">📸</div><h3>Galería</h3><p>Fotos reales del lugar</p></a>
+    <a href="contacto.html" class="ql"><div class="icon">💬</div><h3>Contacto</h3><p>Reserva directa sin comisión</p></a>
+  </div>
+
+  <div class="testimonial">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <blockquote>"Dormir en un palafito fue una experiencia increíble. La tinaja mirando el mar al atardecer no tiene precio. Volveremos."</blockquote>
+    <cite>— Carolina M., Santiago · Enero 2025</cite>
+  </div>
+</section>
+
+<footer class="ft">
+  <p>🏡 Palafito del Sur · Costanera 450, Dalcahue, Chiloé · +56 9 7517 7638</p>
+  <p>Sitio web creado por <a href="https://mr.mrcomsoluciones.cl">MR.COM Soluciones</a> — Plan Multi-Página — Pago único desde $119.400</p>
+</footer>
+
+<a href="https://wa.me/56975177638?text=Hola%20Palafito%20del%20Sur" target="_blank" class="wsp" aria-label="WhatsApp">💬</a>
+<script src="script.js"></script>
+</body>
+</html>
